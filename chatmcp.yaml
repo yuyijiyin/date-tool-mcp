@@ -1,0 +1,21 @@
+name: date-tool-mcp
+description: date
+author: https://github.com/yuyijiyin/date-tool-mcp
+license: MIT
+tags:
+  - date-tool
+  - kaneai
+params:
+  type: object
+  properties: {}
+local: |
+  python server.py
+config: |
+  {
+    "mcpServers": {
+      "date-tool-mcp": {
+        "command": "python",
+        "args": ["server.py"]
+      }
+    }
+  }
